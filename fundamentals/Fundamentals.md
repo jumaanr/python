@@ -1,6 +1,8 @@
-![Alt text](operators.png)
+Python Operators
+![Alt text](images/operators.png)
 
 Python's Reserved Keywords
-![Alt text](reserved.png)
+![Alt text](images/reserved.png)
 
-![Variables](variables.png)
+Python Variables
+![Variables](images/variables.png)
