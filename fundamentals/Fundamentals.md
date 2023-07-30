@@ -1,4 +1,4 @@
-Asking question regarding Python. In python when I execute following ,  'python'  <  'Python'  ,returns TRUE . Why is that ?
+I have a question about Python. When I execute the code 'python' < 'Python', it returns TRUE. Can you please explain why this is the case?
 
 In Python, string comparisons are performed based on lexicographic (dictionary) order. The comparison is done character by character from left to right, starting with the first character of each string. When comparing two strings, Python considers the ASCII values of the characters.
 
