@@ -22,6 +22,7 @@ $python3 myfile.py
 
 #-------------------Print function--------------------------------------------------------------------------
 print("Hellow Furture Python Programer")
+print("Hello World")
 
 """ 
 
@@ -32,7 +33,10 @@ Several types of functions
 2. Modules
 3. Custom Functions
 
-Arguments to the function must be passed between () 
+Arguments to the function must be passed between ()
+We can pass arguments to the functions enclosed with parantheseis function1(arg1,arg2)
+
+Function Execution:
 
 Python checks fewthings before executing a function
 
@@ -42,6 +46,15 @@ Python checks fewthings before executing a function
 4. Executes the function
 5. Return to your code
 6. Resumes execution
+
+print()
+
+- Built in function : can be used without importing it
+- Allows us to print values to console
+- we can invoke it with parantheses
+- We can pass the value we want to print as arguments between parantheses
+- the backslash \ tells python that the next charachter has a special meaning (e.g. \n)
+
 
 Important !: There cannot be more that one instruction per a line in Python
 
@@ -57,41 +70,12 @@ print("Hello \nFuture Programmer")
 print("Hellow","Future","Programmer")#python combines together and print them all in one line
 #special arguments to the print function
 #Usually the newline charachter \n automatically added to end of the print function. But here we can provide the parameter to change it
-print("Hello",end="") #you can pass whatver value you want to add at the end of the line
+#Keyword Arguments
+print("Hello",end="") #you can pass whatver value you want to add at the end of the line (instead of newline charachter comes by default)
 print("Future Programmer")
 print("Hello","Future","Programmer",sep="-") #sperate strings by the specified charachter
 print("Hello","Future","Programmer",sep="-",end="#")
-print("Hello"+" Future")
-
-#-------------------Print function--------------------------------------------------------------------------
-"""
-Function is a part pf your code that's used to cause an effect or evaluate a value
-Can come from :
-- Python (Built in functions)
-- Modules
-- Your own code
-
-Arguments - We can pass arguments to the functions enclosed with parantheseis function1(arg1,arg2)
-
-Function Execution
-
-Python:
-1. Checks function name is legal
-2. Checks arguments passed
-3. Jumps into the function
-4. Executes the function
-5. Returns to your code
-6. Resumes Execution
-
-print()
-
-- Built in function : can be used without importing it
-- Allows us to print values to console
-- we can invoke it with parantheses
-- We can pass the value we want to print as arguments between parantheses
-- the backslash \ tells python that the next charachter has a special meaning (e.g. \n)
-
-"""
+print("Hello"+" Future") #Concatenate strings
 
 #---------------- Python Literals----------------#
 """
