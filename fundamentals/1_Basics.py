@@ -75,12 +75,14 @@ print("Hello",end="") #you can pass whatver value you want to add at the end of 
 print("Future Programmer")
 print("Hello","Future","Programmer",sep="-") #sperate strings by the specified charachter
 print("Hello","Future","Programmer",sep="-",end="#")
-print("Hello"+" Future") #Concatenate strings
+print("Hello"+" Future") #Concatenate strings (Only we can concatenate same type of argumens : example string + string , numn + num)
+print(2+3)
 
 #---------------- Python Literals----------------#
 """
 In Python, literals are used to represent fixed values that are assigned to variables or used within code. They are the basic building blocks of data, and their value is self-evident from their appearance in the code. In other words, literals are constants representing data that can be directly used without further computation or evaluation.
 
+(220, "Hello", "Python", -89  - These are literals)
 ( name, cname, print - These are not literals )
 
 Python supports several types of literals, including:
@@ -91,6 +93,11 @@ Four major types and other types of literals
     Integers :
         Octal numbers = represented by 0o123 = decimal value is  8^2x1+8^1x2+8^0x3 = 64+16+3 = 83
         Hexa Decimal numbers = represented by 0x123 = decimal value is 16^2x1+16^1x2+16^0x3 = 291
+
+    Floating point numbers:
+        These are non empty decimal fractions
+            45.50, 12.1 , -90.0, 89.394
+            0.0000000000000000000001 = 1e-22 (Represent numbers in more economical form)
 
 2. String literals: These represent sequences of characters and are enclosed in single quotes (`'...'`) or double quotes (`"..."`). Examples of string literals include `'Hello, Python!'` and `"I am a string."`.
 
@@ -110,6 +117,13 @@ Four major types and other types of literals
 Here are some examples of Python literals:
 
 """
+print('Hello! "Python" is cool')#print "Python" in double quotes
+print("Hello! 'Python' is cool")#print 'Python' in single quotes'
+#Use escapate charachter to use quotes within a string, Lets python know it is just a quote
+print("Hello! \"Python\" is cool ")
+print(1_000_000) #This prints 1000000 (easy way to represent larger numbers)
+print(type(1_000_000))#This prints the type of the argument, its an integer
+
 
 # Numeric literals
 num_integer = 42
@@ -151,34 +165,45 @@ print(type(10))
 
 # Arithmatic Operators
 
+print(6+4) #prints 10
+print(6+4.0) #prints 10.0
+print(6-4) #prints 2
+print(6-4.0) #prints 2.0
+
 #Exponential Operator **
 print(2 ** 3)
 print(2. ** 3)
-print(2 ** 3.)
-print(2. ** 3)
+print(2 ** 3.) #returns 8.0
+print(2. ** 3.)
 
 #Devision Operator - All returning values are floating point values
 print(10/2)
 print(10./2)
 print(10/2.)
 print(10./2.)
+
 #Floor devision operator //  (This helps to devide integers not returning float values, if not specified)
 
 print(10//2) #returns 5
 print(10.//2)
 print(10//2.)
 print(10.//2.)
+
 #Also rounds the value towards less integer value
+print(6 // 4) # returns 1
+
 print(6. / 4) #returns 1.5
 print(6. // 4) #returns 1.0
-print(6. / -4) #returns 1.5
+print(6. / -4) #returns -1.5
 print(6. // -4) #returns -2.0
+
 
 #Modulous Operator % - Helps to calculate the remainder
 print(4 %2 ) #returns 0
 print(5 % 2) #returns 1
 
 #Binary Operator expects two arguments :  leftargument - rightargument
+
 #Unary Operator : -2  Specifies the value should be negative
 print(-6 - 6) #returns -12
 print(10 - -6) #returns 16
@@ -193,6 +218,14 @@ print(10 - -6) #returns 16
 """
 #Example
 print(10 - 6 ** 2 / 9 * 10 + 1) #returns -29.0
+
+"""
+no unary operators
+First 6**2 = 36
+then 36/9*10  (same priority , then we calculate from left hand side) = 4*10 = 40.0
+finally what remaining is : 10 - 40.0 + 1 , from left to right  -30.0 + 1 = -29.0
+-29.0
+"""
 
 #If the two operators have the same priority we calculate it from Left to right
 #Sub expressions are always calculated first
@@ -211,6 +244,26 @@ COST_OF_APPLE = 1
 #Re assign values 
 cost_of_apples = cost_of_apples + 2
 cost_of_apples +=2
+
+cost_of_apples = cost_of_apples - 2
+cost_of_apples -=2
+
+cost_of_apples = cost_of_apples * 2
+cost_of_apples *=2
+
+cost_of_apples = cost_of_apples ** 2
+cost_of_apples **=2
+
+cost_of_apples = cost_of_apples / 2
+cost_of_apples /=2
+
+cost_of_apples = cost_of_apples // 2
+cost_of_apples //=2
+
+cost_of_apples = cost_of_apples % 2
+cost_of_apples %=2
+
+
 #short way of doing the same
 #shortcut operator works for all the operators
 
