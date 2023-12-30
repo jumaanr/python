@@ -274,7 +274,7 @@ Input Function - input()
 this prompts the user to input some data from console
 A program that doesnt use any input function is called as deaf program
 
-Rule : Value of an input is always a string
+Rule : Result Value of an input is always a string
 If you are using the value of inputs for arthimatic and logic , consider type casting
 
 Integers - int()
@@ -285,7 +285,7 @@ Floating point - float()
 """
 
 # Example : Capturing input
-favourite_color = input("What is your favourite color")
+favourite_color = input("What is your favourite color:   ")
 print ("Your favourite color is " + favourite_color)
 
 #Example : Type casting
@@ -298,7 +298,25 @@ print(age - 10)
 
 #---------------------------------------------------------#
 #------------------------< String Methods >---------------#
-#---------------------------------------------------------#
+
+print("Hello"+""+"there!") #concatenate two strings together
+print("ha"*10) #multiply strings, repeat certain amount by number of times . When multiplied by 0 or negative, return an empty string
+
+#type casting stirngs
+print(int("22"))
+
+#reverse type casting : convert to strings
+print(str(22))
+
+#example
+cost_of_apples = 2
+amount_of_apples = input("How many apples do you want ?")
+total_sum = cost_of_apples*int(amount_of_apples)
+print("John have to pay " + str(total_sum)) # This is correct
+print("Sam have to pay "+total_sum) # This is incorrect 
+print("Paul have to pay ",total_sum) # This is correct
+
+
 #------------------------< Comparison Operators >---------------#
 
 #from page 187 to 195
@@ -316,6 +334,7 @@ less than or equal  <=
 """
 print(2 == 2) #returns true
 print(2 == 4) #returns false
+print('python'>'Python')
 
 
 #---------------------------------------------------------------#
