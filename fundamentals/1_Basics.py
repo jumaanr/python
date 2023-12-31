@@ -334,7 +334,7 @@ less than or equal  <=
 """
 print(2 == 2) #returns true
 print(2 == 4) #returns false
-print('python'>'Python')
+print('python'>'Python') #This throws out 'True' since its using lexographical order of strings and then ASCII values
 
 
 #---------------------------------------------------------------#
