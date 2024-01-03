@@ -115,3 +115,50 @@ x = 'abcd'
 for i in x:
     print(i.upper())
 
+#---------- Logical Operators--------------#
+
+#  and use for logical AND gate, or use for logical OR gate, not used for logical NOR gate
+
+
+#Example : Following logic finds if the two marriage partners are adults
+bride_age = int(input("Please enter bridges age : "))
+groom_age = int(input("Please enter groom's age : "))
+
+if (bride_age >= 18 and groom_age >=18) :
+    print("Congratulations! you can marry")
+elif(bride_age >=18 or groom_age >=18 ):
+    print("at least one of you are old enough to marry")
+else:
+    print("You are both chrildern, bring your parents")
+
+
+#-----------Bitwise Operators--------------#
+
+"""
+Allows you to manupilate single bits of data
+https://kodekloud.com/topic/bitwise-operators/
+
+&  - bitwise AND
+|  - bitwie OR
+^  - bitwise XOR
+~  - negation ( 1 for every 0 and 0 for every 1)
+
+There are also shortcut operations
+
+bti1 = bit1 & 22 ----> bit1 &= 22  (likewise)
+bit |= 22
+bit ^= 22
+
+Bitshifting
+
+Bit shift right >>
+<< Bit shift left
+
+print(22>>1)  : Move all the bits right by 1 position, 0 fills the most left bit " Results 11 , which is exactly the half
+print(22<<1)  : Move all the bits left by 1 position, 0 fills the most right bit " Result is 44 , which exactly the double the size
+
+Samewhise shifting by 2, its the integer devision by 4
+You cannot use bitwise operations for floating point numbers
+
+"""
+#----------------------------------------------------
