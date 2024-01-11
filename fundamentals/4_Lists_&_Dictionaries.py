@@ -101,6 +101,15 @@ print(slice_firstAndlastCutoff) #prints ['B', 'C', 'D']
 slice_exactCopy = letters[:]
 print(slice_exactCopy) #prints ['A', 'B', 'C', 'D', 'E'] #This creates an identical  copy but its memory locations are different
 
+# Reversing a list using slicing
+list1 = [1,2,3,4,5]
+list2 = list1[::-1]
+print(list2)
+#  This line is where the reversing of the list happens, using slicing syntax. 
+#In Python, the slicing syntax is `list[start:stop: step]`. In the case of `list1[::-1]`
+# The `start` and `stop` positions are omitted, meaning the slice goes from the beginning to the end of the list.
+# The `step` is `-1`, which means the list is accessed in reverse. So, instead of taking elements from start to end, it takes them from end to start.
+
 # We can also use del keyword to manupilate lists, however this modifies the original list
 letterz = ["A","B","C","D","E"]
 del letterz[1:3]
