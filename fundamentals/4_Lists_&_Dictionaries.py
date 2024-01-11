@@ -55,7 +55,7 @@ print(list)
 
 mylist = ["A","Mango","Lambda"]
 print(max(mylist)) #This would print Mango as its the highest in alphabetical order
-
+print(min(mylist)) #prints Angola as its the minum valued one in the alphabatical order, this function wont work in mixed lists
 
 #--- Iterating through List--- iterate through items in a list
 
