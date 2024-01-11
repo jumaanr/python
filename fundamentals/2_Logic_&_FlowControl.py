@@ -102,6 +102,10 @@ for i in range(5):
 #so here 'i is 2' wont be printed, instead python will go to the next value
 
 """
+for i in range(10)
+print(i)
+
+
 #Here we can only use an integer with range() function
 x = 'abcd'
 for i in range(len(x)):
