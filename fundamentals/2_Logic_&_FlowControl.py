@@ -115,6 +115,10 @@ x = 'abcd'
 for i in x:
     print(i.upper())
 
+#following go through each letter in KodeKloud
+for letter in 'KodeKloud'
+    print (letter)
+
 #---------- Logical Operators--------------#
 
 #  and use for logical AND gate, or use for logical OR gate, not used for logical NOR gate
