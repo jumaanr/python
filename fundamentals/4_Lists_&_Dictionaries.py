@@ -29,6 +29,7 @@ Methods:
 
 list.append()
 list.insert()
+list.pop(num)
 
 list.sort() - sorts the list ascending order (by default), Alpha numberic , please be aware this method modifies the array
 list.reverse() - reverse the elements in the list
@@ -36,6 +37,7 @@ list.reverse() - reverse the elements in the list
 """
 countries.append("SPAIN") #value to end of the list
 countries.insert(2,"ITALY") # insert data to specific index (insert a new item between values). 2 is the index it should have
+countries.pop(2) #pop out the value at index 2 
 
 #Swaping values in a list
 temp = countries[0]
