@@ -24,6 +24,7 @@ Functions:
 
 print()
 input()
+max(list1) #this would print the max number (in numeric order ), max word in alphabatical oder
 
 Methods:
 
@@ -51,6 +52,10 @@ list.sort()
 print(list)
 list.reverse()
 print(list)
+
+mylist = ["A","Mango","Lambda"]
+print(max(mylist)) #This would print Mango as its the highest in alphabetical order
+
 
 #--- Iterating through List--- iterate through items in a list
 
